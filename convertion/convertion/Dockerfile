@@ -16,8 +16,8 @@ RUN mvn dependency:go-offline
 # Construir o projeto, gerando o arquivo JAR
 RUN mvn clean package
 
-# Usar a imagem base do JDK 22 para rodar a aplicação
-FROM openjdk:22-jdk-slim
+# Usar a imagem base do JDK 17 para rodar a aplicação
+FROM eclipse-temurin:17-jdk
 
 # Definir o diretório de trabalho dentro do container
 WORKDIR /app
@@ -30,3 +30,4 @@ EXPOSE 8080
 
 # Comando para rodar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]
+

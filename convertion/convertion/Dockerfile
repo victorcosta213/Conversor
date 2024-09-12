@@ -1,5 +1,5 @@
-# Usar a imagem base do Maven para construir o projeto
-FROM maven:3.9.0-eclipse-temurin-22 AS build
+# Usar a imagem base do Maven com JDK 17 para construir o projeto
+FROM maven:3.9.0-eclipse-temurin-17 AS build
 
 # Definir o diretório de trabalho dentro do container
 WORKDIR /app

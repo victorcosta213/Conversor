@@ -1,4 +1,4 @@
-package com.convertion.convertion;
+package com.convertion;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

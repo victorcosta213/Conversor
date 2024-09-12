@@ -8,7 +8,7 @@ WORKDIR /app
 COPY pom.xml .
 
 # Copiar o restante dos arquivos do projeto para dentro do container
-COPY src .
+COPY src ./src
 
 # Baixar as dependências do Maven
 RUN mvn dependency:go-offline
